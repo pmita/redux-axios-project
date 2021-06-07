@@ -37,5 +37,5 @@ const base_url = 'https://api.rawg.io/api/';
 //Setting our explicit query sting
 const popular_games = `games?key=8787cea324f74954ab434c7d334b191b&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
 //Combining the two in one main URL
-const popularGamesURL = () => `${base_url}${popular_games}`;
-console.log(popularGamesURL());
+export const popularGamesURL = () => `${base_url}${popular_games}`;
+
